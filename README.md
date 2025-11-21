@@ -4,7 +4,7 @@ A modern, glassmorphism-styled countdown timer application that allows users to 
 
 ## 🚀 Demo
 
-**Live Demo:** chronify-kappa.vercel.app
+**Live Demo:** https://chronify-kappa.vercel.app/
 
 
 ## 🌟 Features
