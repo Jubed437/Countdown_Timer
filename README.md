@@ -4,7 +4,7 @@ A modern, glassmorphism-styled countdown timer application that allows users to 
 
 ## 🚀 Demo
 
-**Live Demo:** https://jubed437.github.io/Countdown_Timer/
+**Live Demo:** chronify-kappa.vercel.app
 
 
 ## 🌟 Features
@@ -57,14 +57,6 @@ Countdown_Timer/
 └── README.md           # Project documentation
 ```
 
-## 🎯 Key Functions
-
-- `addTimer()` - Creates new timers or updates existing ones
-- `selectTimer()` - Displays selected timer with animations
-- `updateCountdown()` - Real-time countdown calculations
-- `deleteTimer()` - Removes timers with cleanup
-- `changeTheme()` - Switches background themes
-- `showTimersList()` - Renders timer list in sidebar
 
 ## 🎨 Design Features
 
@@ -74,11 +66,6 @@ Countdown_Timer/
 - **Dynamic Colors** - Status-based color coding for timer states
 - **Responsive Typography** - Scalable fonts and spacing
 
-## 📱 Browser Compatibility
 
-- Chrome/Chromium (recommended)
-- Firefox
-- Safari
-- Edge
 
-*Note: Glassmorphism effects work best in modern browsers with backdrop-filter support.*
+*Note: Glassmorphism effects work best in modern browsers with backdrop-filter support.In some Systems, it may take some time to load the starting window *
