@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Main application container -->
+  <div class="main">
+    <!-- Sidebar with timer list and controls -->
+    <div class="side-bar">
+      <header>
+        <h2>Chronify</h2>
+        <select id="change-theme" onchange="changeTheme()">
+          <option value="cosmic-spiral-galaxy.jpg">Cosmic Galaxy</option>
+          <option value="dark-fantasy-scene.jpg">Dark Fantasy</option>
+          <option value="galaxy-night-view.jpg">Galaxy Night</option>
+        </select>
+      </header>
+      <button id="newTimer" onclick="openModal()">Add new Timer</button>
+      <!-- Dynamic timer list container -->
+      <div id="timersList">
+
+      </div>
+    </div>
+    <!-- Main content area -->
+    <div class="main-content">
+      <div class="welcome-screen">
+        No Timers have been added yet...
+      </div>
+      <!-- Selected timer display -->
+      <div class="timerDisplay">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for adding/editing timers -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h2>Add a new Timer</h2>
+        <button id="cross-btn" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <!-- Timer creation form -->
+      <form id="timerForm">
+        <div class="form-group">
+          <label for="timerName">Timer Name:</label>
+          <input type="text" id="timerName" name="timerName" required>
+        </div>
+        <div class="form-group">
+          <label for="timerDescription">Description:</label>
+          <textarea id="timerDescription" name="timerDescription" placeholder="What is this countdown for?"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Target Date & Time:</label>
+          <div class="date-time-inputs">
+            <input type="date" id="timerDate" name="timerDate" required>
+            <input type="time" id="timerTime" name="timerTime" required>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="cancel-btn" onclick="closeModal()">Cancel</button>
+          <button type="submit" class="submit-btn">Save Timer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
